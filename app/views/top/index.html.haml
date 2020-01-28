@@ -26,14 +26,14 @@
         .top-menu-button 販売先マスタ
     .content-list
       %p 管理
-      -# -# - if user_signed_in?
-      -# -#   = link_to destroy_user_session_path, method: :delete, class: "" do
-      -# -#     .top-menu-button ログアウト
-      -# -# - else
-      -#   = link_to new_user_session_path, class: "" do
-      -#     .top-menu-button ログイン
-      -#   = link_to new_user_registration_path, class: "" do
-      -#     .top-menu-button 新規登録
+      - if user_signed_in?
+        = link_to destroy_user_session_path, method: :delete, class: "" do
+          .top-menu-button ログアウト
+      - else
+        = link_to new_user_session_path, class: "" do
+          .top-menu-button ログイン
+        = link_to new_user_registration_path, class: "" do
+          .top-menu-button 新規登録
     .content-list
       %p その他
       = link_to root_path, class: "" do
