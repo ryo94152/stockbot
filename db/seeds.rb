@@ -193,7 +193,7 @@ Customer.create(customer_code:"08300810",customer_name:"東日本営業本部営
 Customer.create(customer_code:"08300820",customer_name:"東日本営業本部営業二課")
 Customer.create(customer_code:"08300830",customer_name:"東日本営業本部直販課")
 Customer.create(customer_code:"217041001",customer_name:"セントラルフーズ管理部")
-Customer.create(customer_code:"217041002",cuname:"セントラルフーズ原料部")
+Customer.create(customer_code:"217041002",customer_name:"セントラルフーズ原料部")
 Customer.create(customer_code:"5106661081",customer_name:"ヤオコー狭山センター")
 Customer.create(customer_code:"5106661082",customer_name:"ヤオコー横浜センター")
 Customer.create(customer_code:"5106661084",customer_name:"ヤオコー千葉センター")

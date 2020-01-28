@@ -10,13 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_27_141815) do
+ActiveRecord::Schema.define(version: 2020_01_28_073457) do
 
   create_table "categories", id: :integer, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "code"
     t.string "genre"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "ancestry"
+    t.index ["ancestry"], name: "index_categories_on_ancestry"
   end
 
   create_table "customers", id: :integer, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -40,9 +42,9 @@ ActiveRecord::Schema.define(version: 2020_01_27_141815) do
   end
 
   create_table "stocks", id: :integer, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.datetime "stock_year", null: false
-    t.datetime "stock_month", null: false
-    t.datetime "stock_day", null: false
+    t.integer "stock_year", null: false
+    t.integer "stock_month", null: false
+    t.integer "stock_day", null: false
     t.string "lot", null: false
     t.integer "box", null: false
     t.decimal "weight", precision: 5, scale: 1, null: false
