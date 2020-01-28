@@ -1,0 +1,17 @@
+.stock_title 販売先情報訂正
+= form_for @customer, method: :patch do |f|
+  %table.stock-table-customer
+    %tr
+      %th
+        = f.label :customer_code, "販売先コード"
+      %th
+        = f.label :customer_name, "販売先名"
+    %tr
+      %td.form-stock
+        = f.text_field :customer_code, placeholder: "※入力必須(6桁)",class:"stock-text-field"
+      %td.form-stock
+        = f.text_field :customer_name, placeholder: "※入力必須",class:"stock-text-field"
+  .stock-button
+    = f.submit "変更" ,class: "stock-finish"
+    = link_to customer_path, method: :delete,class: "stock-delete-button" do
+      .stock-button-delete-font 削除

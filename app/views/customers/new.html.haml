@@ -1,0 +1,15 @@
+.stock_title 販売先情報入力
+= form_for @customer, method: :post do |f|
+  %table.stock-table-customer
+    %tr
+      %th
+        = f.label :customer_code, "販売先コード"
+      %th
+        = f.label :customer_name, "販売先名"
+    %tr
+      %td.form-stock
+        = f.text_field :customer_code, placeholder: "※入力必須(6桁-12桁)",class:"stock-text-field"
+      %td.form-stock
+        = f.text_field :customer_name, placeholder: "※入力必須",class:"stock-text-field"
+  .stock-button
+    = f.submit "登録" ,class: "stock-finish"

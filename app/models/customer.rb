@@ -4,7 +4,7 @@ class Customer < ApplicationRecord
   validates :customer_name, presence: true
 
   def ten_and_han_name
-    self.han_name + " " + self.ten_name.to_s 
+    self.customer_name.to_s 
   end
 
 end
