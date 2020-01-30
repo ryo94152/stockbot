@@ -9,10 +9,7 @@
       - @parents.each do |parent|
         %tr
           - if parent.ancestry == nil
-            %td= parent.id
-          -# - elsif parent.ancestry.length == 1
-          - elsif parent.ancestry != nil
-            %td= parent.id
+          - elsif parent.ancestry.length == 1
           - else
             %td= parent.id
             %td= parent.parent.genre
