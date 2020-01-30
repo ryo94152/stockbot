@@ -9,7 +9,6 @@
     %th 店舗名
     %th ロット
     %th 単価
-    %th 
     %tr
       - @deliveries.each do |delivery|
         %tr
@@ -21,7 +20,6 @@
           %td= Customer.where(id:delivery.customer_id).count
           %td= Stock.where(id:delivery.stock_id).count
           %td= delivery.price
-          %td.td-edit= link_to "編集", root_path
 .stock-button
   = link_to new_delivery_path, class: "stock-edit-button" do
     .stock-button-edit-font 新規登録
