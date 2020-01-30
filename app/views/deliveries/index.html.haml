@@ -6,8 +6,9 @@
     %th 販売日
     %th 販売先コード
     %th 販売先名
-    %th 店舗名
     %th ロット
+    %th 数量
+    %th 重量
     %th 単価
     %tr
       - @deliveries.each do |delivery|
@@ -15,10 +16,11 @@
           %td= delivery.sell_year
           %td= delivery.sell_month
           %td= delivery.sell_day
-          %td= Customer.where(id:delivery.customer_id).count
-          %td= Customer.where(id:delivery.customer_id).count
-          %td= Customer.where(id:delivery.customer_id).count
-          %td= Stock.where(id:delivery.stock_id).count
+          %td= delivery.customer.customer_code
+          %td= delivery.customer.customer_name
+          %td= delivery.stock.lot
+          %td= delivery.stock.box
+          %td= delivery.stock.weight
           %td= delivery.price
 .stock-button
   = link_to new_delivery_path, class: "stock-edit-button" do

@@ -2,7 +2,7 @@ class DeliveriesController < ApplicationController
   skip_before_action:logged_in_user,only:[:index,:new]
 
   def index
-    @deliveries = Delivery.all
+    @deliveries = Delivery.includes(:customer).includes(:stock)
     @stocks = Stock.all
     @customer = Customer.all
   end
