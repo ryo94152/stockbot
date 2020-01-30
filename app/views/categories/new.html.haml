@@ -1,0 +1,15 @@
+.stock_title 商品カテゴリ入力
+= form_for @category, method: :post do |f|
+  %table.stock-table-customer
+    %tr
+      %th
+        = f.label :code, "コード"
+      %th
+        = f.label :genre, "品名"
+    %tr
+      %td.form-stock
+        = f.text_field :code, placeholder: "※入力必須(6桁-12桁)",class:"stock-text-field"
+      %td.form-stock
+        = f.text_field :genre, placeholder: "※入力必須",class:"stock-text-field"
+  .stock-button
+    = f.submit "登録" ,class: "stock-finish"

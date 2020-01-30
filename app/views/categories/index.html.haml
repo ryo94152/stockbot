@@ -6,12 +6,17 @@
     %th 部位
     %th 規格
     %tr
-      -# - @parents.each do |parent|
-      -#   %tr
-      -#     %td= parent.id
-      -#     %td= parent.parent.parent.genre
-      -#     %td= parent.parent.genre
-      -#     %td= parent.genre
+      - @parents.each do |parent|
+        %tr
+          - if parent.ancestry == nil
+          - elsif parent.ancestry.length == 1
+          - else
+            %td= parent.id
+            %td= parent.parent.parent.genre
+            %td= parent.parent.genre
+            %td= parent.genre
 .stock-button
+  = link_to new_category_path, class: "stock-edit-button" do
+    .stock-button-edit-font 新規登録
   = link_to root_path, class: "stock-edit-button" do
     .stock-button-edit-font 戻る
