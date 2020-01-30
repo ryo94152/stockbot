@@ -12,7 +12,7 @@
           - elsif parent.ancestry.length == 1
           - else
             %td= parent.id
-            %td= parent.id
+            %td= parent.parent.parent.genre
             %td= parent.parent.genre
             %td= parent.genre
 .stock-button
