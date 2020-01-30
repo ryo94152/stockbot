@@ -9,10 +9,13 @@
       - @parents.each do |parent|
         %tr
           - if parent.ancestry == nil
-          - elsif parent.ancestry.length == 1
+            %td= parent.id
+          -# - elsif parent.ancestry.length == 1
+          - elsif parent.ancestry != nil
+            %td= parent.id
           - else
             %td= parent.id
-            %td= parent.parent.parent.genre
+            %td= parent.parent.genre
             %td= parent.parent.genre
             %td= parent.genre
 .stock-button
