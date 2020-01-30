@@ -16,7 +16,8 @@
           .sub-title - 在庫管理アプリ -
       .top-center
         - if user_signed_in?
-          #{current_user.email}さんでログインしています
+          .nickname
+            #{current_user.nickname}  さんでログインしています
         - else
       .top_right
         - if user_signed_in?
