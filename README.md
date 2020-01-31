@@ -30,9 +30,9 @@
 - Email : test@gmail.com / Password : 123456 でログインできます。<br>
 ![新規登録画面](https://user-images.githubusercontent.com/57342731/73519336-29532080-4444-11ea-9fea-3864f78dcbe3.png)
 2. カテゴリと販売先のマスタを設定します。
-![入庫情報登録画面](https://user-images.githubusercontent.com/57342731/73521042-5e617200-4448-11ea-981c-4a0b0c484708.png)
+![販売先登録画面](https://user-images.githubusercontent.com/57342731/73521143-9bc5ff80-4448-11ea-8949-46db53fdc7e3.png))
 3. 入庫情報を入力します。
-![販売先登録画面](https://user-images.githubusercontent.com/57342731/73521143-9bc5ff80-4448-11ea-8949-46db53fdc7e3.png)
+![入庫情報登録画面](https://user-images.githubusercontent.com/57342731/73521042-5e617200-4448-11ea-981c-4a0b0c484708.png)
 4. 出庫情報を入力します。
 ![出庫情報登録画面](https://user-images.githubusercontent.com/57342731/73521192-b9936480-4448-11ea-82e6-4dc28a155766.png)
 5. 入庫情報と出庫情報の反映されたものが在庫情報で確認できます。
