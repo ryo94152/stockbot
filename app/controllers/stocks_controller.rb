@@ -26,6 +26,7 @@ class StocksController < ApplicationController
   def new
     @stock = Stock.new
     @parents = Category.all
+    @categories = Category.all
   end
 
   def create

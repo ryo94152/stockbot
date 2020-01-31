@@ -35,5 +35,7 @@
         = f.select :status,[["1:在庫", "1"], ["2:仮出庫", "2"], ["3:出庫済", "3"]]
       %td.form-stock
         = f.text_field :category_id, placeholder: "畜種/部位/規格",class:"stock-text-field"
+      -# %td.form-stock
+      -#   = f.collection_select :category_id, @categories, :id,:short_cut_code
   .stock-button
     = f.submit "登録" ,class: "stock-finish"
