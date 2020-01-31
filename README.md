@@ -1,9 +1,11 @@
 # 在庫管理アプリ
 
+![TOPページ](https://user-images.githubusercontent.com/57342731/72681991-3f8be300-3b0c-11ea-8d02-9cc2412e213e.png)
+
+## URl
+
 <https://stockbot4968.herokuapp.com/>
 
-![TOPページ](https://user-images.githubusercontent.com/57342731/72681991-3f8be300-3b0c-11ea-8d02-9cc2412e213e.png)
- 
 ## このアプリについて
  
 在庫管理ができるアプリケーションです。<br>
@@ -24,10 +26,10 @@
 ## 使い方
 
 1. ユーザー登録、またはログインをします。<br>
+- ログインしてない状態では各情報の参照はできますが登録、編集、削除は行えません。<br>
 - 下記のemailとパスワードでログインできます。<br>
 e-mail:test@gmail.com<br>
 password:123456<br>
-- ログインしてない状態では各情報の参照はできますが登録、編集、削除は行えません。
 ![新規登録画面](https://user-images.githubusercontent.com/57342731/72661103-cad87c00-3a19-11ea-9f27-1afbf6326576.png)
 2. カテゴリと販売先のマスタを設定します。
 ![出庫情報登録画面](https://user-images.githubusercontent.com/57342731/72661118-ee032b80-3a19-11ea-9b3a-d799ec100baa.png)
