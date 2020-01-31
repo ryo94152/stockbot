@@ -1,5 +1,5 @@
 class DeliveriesController < ApplicationController
-  skip_before_action:logged_in_user,only:[:index,:new]
+  skip_before_action:logged_in_user,only:[:index]
 
   def index
     @deliveries = Delivery.includes(:customer).includes(:stock)
