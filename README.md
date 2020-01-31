@@ -48,7 +48,7 @@
 ## データベース設計について
 
 - ER図は以下の通りとなります。
-![ER図](https://user-images.githubusercontent.com/57342731/72661143-463a2d80-3a1a-11ea-9f94-d345a0b5fcdb.png)
+![ER図](https://user-images.githubusercontent.com/57342731/73524297-2c540e00-4450-11ea-8a09-6632db681522.png)
 
 ## 開発環境
  
