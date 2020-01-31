@@ -8,5 +8,5 @@ class Stock < ApplicationRecord
   def lot_and_weight
     self.lot + " / " + self.weight.to_s + "Kg"
   end
-  
+
 end

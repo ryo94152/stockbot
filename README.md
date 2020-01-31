@@ -1,6 +1,6 @@
 # 在庫管理アプリ
 
-![TOPページ](https://user-images.githubusercontent.com/57342731/72681991-3f8be300-3b0c-11ea-8d02-9cc2412e213e.png)
+![TOPページ](https://user-images.githubusercontent.com/57342731/73519267-e3965800-4443-11ea-9da4-90ca17459729.png)
 
 ## URL
 
@@ -28,15 +28,15 @@
 1. ユーザー登録、またはログインをします。<br>
 - ログインしてない状態では各情報の参照はできますが登録、編集、削除は行えません。<br>
 - Email : test@gmail.com / Password : 123456 でログインできます。<br>
-![新規登録画面](https://user-images.githubusercontent.com/57342731/72661103-cad87c00-3a19-11ea-9f27-1afbf6326576.png)
+![新規登録画面](https://user-images.githubusercontent.com/57342731/73519336-29532080-4444-11ea-9fea-3864f78dcbe3.png)
 2. カテゴリと販売先のマスタを設定します。
-![出庫情報登録画面](https://user-images.githubusercontent.com/57342731/72661118-ee032b80-3a19-11ea-9b3a-d799ec100baa.png)
+![入庫情報登録画面](https://user-images.githubusercontent.com/57342731/73521042-5e617200-4448-11ea-981c-4a0b0c484708.png)
 3. 入庫情報を入力します。
-![販売先登録画面](https://user-images.githubusercontent.com/57342731/72661112-e2b00000-3a19-11ea-8c7a-ee77ad929ed8.png)
+![販売先登録画面](https://user-images.githubusercontent.com/57342731/73521143-9bc5ff80-4448-11ea-8949-46db53fdc7e3.png)
 4. 出庫情報を入力します。
-![入庫情報登録画面](https://user-images.githubusercontent.com/57342731/72661115-e93e7780-3a19-11ea-9a29-a55f558a5296.png)
+![出庫情報登録画面](https://user-images.githubusercontent.com/57342731/73521192-b9936480-4448-11ea-82e6-4dc28a155766.png)
 5. 入庫情報と出庫情報の反映されたものが在庫情報で確認できます。
-![在庫情報確認画面](https://user-images.githubusercontent.com/57342731/72661123-f22f4900-3a19-11ea-9268-33b479a67f68.png)
+![在庫情報確認画面](https://user-images.githubusercontent.com/57342731/73520981-3e31b300-4448-11ea-9f68-a5550076947d.png)
 
 ## 今後実装したいところ
 
