@@ -7,12 +7,16 @@
         .top-menu-button 入庫データ入力
       = link_to stocks_path, class: "" do
         .top-menu-button 入庫データ参照
+      = link_to root_path, class: "" do
+        .top-menu-button CSVデータ取込
     .content-list
       %p 出庫管理
       = link_to new_delivery_path, class: "" do
         .top-menu-button 出庫データ入力
       = link_to deliveries_path, class: "" do
         .top-menu-button 出庫データ参照
+      = link_to root_path, class: "" do
+        .top-menu-button CSVデータ取込
     .content-list
       %p 在庫管理
       = link_to zaiko_stocks_path, class: "" do
@@ -38,3 +42,5 @@
       %p その他
       = link_to root_path, class: "" do
         .top-menu-button 更新情報
+      = link_to root_path, class: "" do
+        .top-menu-button 棚卸し
